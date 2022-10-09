@@ -1,5 +1,6 @@
 <?php
     require_once 'action/main.php';
+    
 ?>
 
 <!DOCTYPE html>
