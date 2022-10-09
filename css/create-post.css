@@ -1,0 +1,224 @@
+.create-post {
+    margin: 30px auto;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 40px;
+}
+
+.choose-service {
+    box-sizing: border-box;
+    color: black;
+}
+
+.choose-service-block {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-post-container {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.choose-service-block__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #d0aae4;
+    overflow: hidden;
+    position: relative;
+}
+
+.find-service {
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.find-service input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+}
+.founded-services {
+    display: none;
+}
+
+.founded-services_show {
+    position: absolute;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 200px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.223);
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+}
+
+.founded-services__item {
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.founded-services__item:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.add-service {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.choose-service-block h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choose-service-block__image-change {
+    position: absolute;
+    bottom: -50px;
+    width: inherit;
+    height: 50px;
+    background-color: #00000078;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+    transition: bottom .5s ease;
+}
+
+.choose-service-block__image-change input {
+    border: none;
+    background-color: black;
+}
+
+.choose-service-block__image:hover .choose-service-block__image-change {
+    bottom: 0;
+}
+
+.choose-service-block__image-change label {
+    cursor: pointer;
+}
+
+.input-place_name,
+.input-place_url {
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 30px;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.button_submit {
+    background-color: #030fab;
+    color: white;
+}
+
+.button_cancel {
+    background-color: #ab0303;
+    color: white;
+}
+
+.find-service .edit {
+    text-align: center;
+    cursor: pointer;
+
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+}
+
+.create-post-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post-container input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 40px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.create-post-container textarea {
+    margin-top: 15px;
+    font-size: 16px;
+    height: 3000px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.create-post-container button {
+float: right;
+}
+
+.find-service_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-service_image img {
+    height: inherit;
+    object-fit: cover;
+}
