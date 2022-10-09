@@ -27,6 +27,7 @@
     $posts = mysqli_fetch_all(mysqli_query($connect, "SELECT `id_post`, `id_service`, posts.`id_user`, `title`, `rating`, `text_post`, COUNT(views.id_view) AS 'view' FROM posts
 LEFT JOIN views USING(id_post) $sort_service GROUP BY id_post $sort"), MYSQLI_ASSOC);
     $services = mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM services"), MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>

@@ -6,7 +6,6 @@
     if ($id_user == null) {
         header("Location: login.php");
     }
-
 ?>
 
 <!DOCTYPE html>

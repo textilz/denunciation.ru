@@ -4,6 +4,7 @@ require_once 'action/main.php';
 $id_user = $_SESSION['id_user'];
 
 $services = mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM services ORDER BY id_services DESC LIMIT 8"), MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
