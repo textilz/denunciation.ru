@@ -31,7 +31,7 @@ $(window).click((e) => {
             let image = new Image();
             image.src = 'data:image/png;base64,' + res;
             $('.find-service_image').empty()
-            $('.find-service_image').append(image);
+            $('.find-service_image').append(image)
         }).fail((err) => {
         })
 
